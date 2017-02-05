@@ -1,5 +1,6 @@
 package com.androidhw.news.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.AlphaAnimation;
@@ -68,6 +69,10 @@ public class SpalshActivity extends AppCompatActivity {
 				//判断是否进入够引导界面
 
 					//跳转到引导界面
+				Intent intent = new Intent(SpalshActivity.this, GuideActivity.class);
+				startActivity(intent);
+				//结束当前界面
+				finish();
 
 			}
 
